@@ -1,0 +1,321 @@
+// Default font
+$font-family-sans-serif: "PT Sans" !default;
+
+// Crimson colors
+$link-color: #a51c30 !default;
+$link-color-dark: #ef9aa4 !default; // Passing lightness of #a51c30 foreground, against #212529 background, per https://webaim.org/resources/contrastchecker/
+$link-hover-color: $link-color !default;
+$link-hover-color-dark: $link-color-dark !default;
+
+// Headings
+// Adapted from https://github.com/primer/css/blob/master/src/markdown/headings.scss
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.125rem;
+$h6-font-size: 1.0625rem;
+$headings-font-weight: bold;
+
+// Dark mode
+// https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
+$color-mode-type: media-query;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Syntax highlighting from Pygments
+// https://pygments.org/styles/
+@media (prefers-color-scheme: dark) {
+    .highlight {
+        @import "github-dark";
+    }
+}
+@media (prefers-color-scheme: light) {
+    .highlight {
+        @import "default";
+    }
+}
+
+// Align badges
+.badge {
+    vertical-align: middle;
+}
+
+// Format tables like paragraphs
+.bootstrap-table {
+    margin-bottom: 1rem;
+
+    // Only fill viewport's width in card view
+    .fixed-table-container:not(.has-card-view) .table {
+        width: auto;
+    }
+
+    // A la GitHub
+    .table td, .table th {
+        padding: .5rem .75rem;
+    }
+
+    // Boldface headings in card view
+    .card-view:first-child {
+        font-weight: bold;
+    }
+}
+
+// Confine borders to images
+.img-thumbnail {
+    width: fit-content;
+}
+
+// Fill 80% of viewport
+.modal-dialog {
+    max-height: inherit;
+    max-width: inherit;
+    margin: 0 auto;
+    width: 80vw;
+}
+.modal-content {
+    height: 80vh;
+}
+
+// Suppress bottom margin within parents, except for pre tags
+// (whose padding otherwise creates illusion that they're closer to siblings than they are)
+:last-child:not(pre) {
+    margin-bottom: 0;
+}
+
+// Wrap long words (and URLs, whether linked or not), especially on mobile,
+// but not in buttons and not in tables, which should instead scroll horizontally
+* {
+    word-break: break-word;
+}
+.btn, table * {
+    word-break: normal;
+}
+
+// Offset links' underline
+a, .btn-link {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+a[data-local] {
+    color: inherit;
+}
+
+// A la GitHub
+blockquote {
+    border-left-color: var(--bs-tertiary-color);
+    border-left-style: solid;
+    border-left-width: thick;
+    color: $text-muted;
+    padding-left: 1rem;
+}
+
+// A la GitHub
+code.highlighter-rouge {
+    @extend .border;
+    color: inherit;
+    padding: calc(.2rem - 1px) .2rem;
+}
+.alert code.highlighter-rouge {
+    border-color: var(--bs-alert-border-color) !important;
+}
+
+// A la GitHub
+div.highlighter-rouge, div.mermaid, div.scratchblocks {
+    margin-bottom: 1rem;
+}
+li {
+    div.highlighter-rouge {
+        margin-bottom: 0;
+    }
+}
+
+// Shrink Mermaid charts
+div.mermaid svg {
+    height: auto;
+    max-height: 100vh;
+}
+
+// Details, summaries
+details {
+    margin-bottom: 1rem;
+}
+summary + * {
+    margin-top: 1rem; // Because no pseudo-class for detecting when details are open
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+
+    // Subtle anchors
+    a[data-id] {
+        color: inherit;
+        text-decoration: none;
+    }
+    a[data-id]:hover {
+        color: inherit;
+    }
+
+    // Subtitles
+    em {
+        @extend .small;
+        @extend .text-muted;
+        font-style: normal;
+    }
+}
+h1, h2, .h1, .h2 {
+    border-bottom-color: $gray-200;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: .5rem;
+}
+@for $i from 1 through 6 {
+    h#{$i} + a[data-id],
+    h#{$i} + a[data-id],
+    .h#{$i} + a[data-id],
+    .h#{$i} + a[data-id] {
+        margin-top: -.5rem;
+    }
+}
+
+// Defaults for iframes
+iframe {
+    border: 0;
+    display: block; // Else defaults to inline, which adds whitespace below margin-bottom
+    margin-bottom: 16px;
+}
+
+// For resizing
+// https://iframe-resizer.com/setup/parent/
+iframe {
+    height: 100vh;
+    width: 100%;
+}
+
+// Ensure responsive in Safari on iOS (for, e.g., Google Calendars), per
+// https://stackoverflow.com/a/23083463/5156190
+iframe {
+    min-width: 100%;
+    width: 1px;
+}
+
+// Confine images to parent
+img {
+    max-width: 100%;
+}
+
+// Size the emoji according to the surrounding text
+// https://github.com/twitter/twemoji#inline-styles
+img.emoji {
+    height: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+    width: 1em;
+}
+
+// A la GitHub
+dt + dd, dd + dd {
+    margin-top: .25rem;
+}
+li:first-child, li + li {
+    margin-top: .25rem;
+}
+#markdown-toc { // But not in TOC
+    li:first-child, li + li {
+        margin-top: 0;
+    }
+}
+li > blockquote,
+li > img {
+    margin-top: .25rem;
+}
+li > div.scratchblocks,
+li > p,
+li pre {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+// Mimic Google's highlighting
+mark, .mark {
+    background-color: inherit;
+    color: inherit;
+    font-weight: bold;
+    padding: 0
+}
+
+// Padding after numbers
+ol > li {
+    padding-left: .5rem;
+}
+
+// A la GitHub
+pre {
+    @extend .border;
+    padding: .5rem .75rem;
+}
+
+// Prevent wrapping on iOS
+pre code span {
+    font-style: normal !important; // Override Pygments' italics
+    white-space: pre;
+}
+
+//// alert
+
+// Box shadow
+#alert {
+    box-shadow: .5rem .5rem 1rem rgba($black, .20); // https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
+}
+
+//// marker
+
+// + and -
+[data-marker="+"] > span, [data-marker="-"] > span {
+    cursor: pointer;
+}
+[data-marker="+"] > .fa-li, [data-marker="-"] > .fa-li {
+    user-select: none;
+}
+[data-marker="+"] > .fa-li > .fa-plus-square, [data-marker="-"] > .fa-li > .fa-minus-square {
+    font-size: 80%;
+}
+
+// +
+[data-marker="+"] > ol, [data-marker="+"] > ul {
+    display: none;
+}
+
+// *
+[data-marker="*"] > .fa-li > .fa-square {
+    font-size: 50%;
+    vertical-align: 25%;
+}
+
+
+//// next
+
+.next {
+    display: none;
+}
+
+
+//// spoiler
+
+details > summary {
+    font-weight: bold;
+}
+
+//// video
+
+// Format videos like paragraphs
+[data-video] {
+    background-color: #000;
+    margin-bottom: 1rem;
+}
