@@ -1,94 +1,42 @@
-# Events *Learn, Build, and Connect*
-
-<!-- INSTRUCTIONS: Update this page with your actual events -->
-
-## Upcoming Events
-
-
-### Weekly Meetings
-
-{% alert primary %}
-**General Meetings**  
-**When:** Every [DAY] at [TIME - e.g., 6:00 PM EST]  
-**Where:** [Building Name, Room Number] or [Virtual Link]  
-**What:** Workshops, presentations, project demos, and socializing
-{% endalert %}
-
-### Special Events
-
-None currently.
-
-{% spoiler "More Details" %}
-Add additional information here that expands when users click "More Details".
-For example: schedule, rules, FAQs, etc.
-{% endspoiler %}
-
-<!-- ---
-
-#### [Event Name - e.g., "Web Development Workshop Series"]
-**Dates:** [DATE 1], [DATE 2], [DATE 3]  
-**Location:** [Venue Name]  
-**Description:** [Brief description]
-
-**Topics covered:**
-- Session 1: [Topic]
-- Session 2: [Topic]
-- Session 3: [Topic]
-
-**Prerequisites:** [None / Basic programming knowledge / etc.] -->
-
-<!-- ---
-
-#### [Event Name - e.g., "Industry Speaker Series"]
-**Date:** [DATE AND TIME]  
-**Location:** [Venue Name]  
-**Speaker:** [Speaker Name], [Title] at [Company]  
-**Topic:** [Presentation Topic]
-
-**About the Speaker:** [Brief bio] -->
-
+---
+layout: page
+title: Events
+permalink: /events/
+full_width: true
 ---
 
-## Regular Activities
+<!-- HEADER -->
+<section class="py-5 bg-black position-relative overflow-hidden text-center">
+    <div class="container pt-5">
+        <span class="badge bg-white bg-opacity-10 text-white border border-white border-opacity-25 rounded-pill mb-3 px-3 py-2">GKCIET CODING CLUB</span>
+        <h1 class="display-3 fw-bold mb-3">Level Up Your <span class="text-brand">Skills</span></h1>
+        <p class="text-muted mx-auto mb-5" style="max-width: 600px;">
+            Join the debug community events. From hackathons to workshops, we build the future of tech together.
+        </p>
+        
+        <!-- Navigation Tabs -->
+        <div class="d-flex justify-content-center mb-5">
+            <div class="nav-segment-container">
+                <a href="/events/" class="btn btn-brand btn-sm rounded-pill px-4 text-black fw-bold text-decoration-none nav-segment-item active">All Events</a>
+                <a href="/events/hackathons/" class="btn btn-transparent btn-sm rounded-pill px-4 text-muted hover-white text-decoration-none nav-segment-item">Hackathons</a>
+                <a href="/events/workshops/" class="btn btn-transparent btn-sm rounded-pill px-4 text-muted hover-white text-decoration-none nav-segment-item">Workshops</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-### Weekly Code & Coffee
-- **When:** Every [DAY] at [TIME]
-- **Where:** [Location]
-- **What:** Casual coding session, work on projects, get help, socialize
-
-### Project Nights
-- **When:** Every [DAY] at [TIME]
-- **Where:** [Location]
-- **What:** Collaborative work on club projects
-
-
-<!-- ## Past Events
-
-- **[Past Event Name]** - [Date] - [Brief summary or link to photos/recap]
-
-
- -->
-
-## Stay Updated
-
-{% alert info %}
-**Never miss an event!**
-- Join our Whatsapp : [INVITE LINK](/todo/)
-{% endalert %}
-
-## Event Guidelines
-
-
-Please review our event guidelines:
-- All members must follow our [code of conduct](/todo/)
-- RSVP required for catered events
-- Bring your sufficiently charged laptop (or installed software beforehand if required by workshop)
-
----
-
-## Suggest an Event
-
-Have an idea for a workshop, speaker, or activity? We'd love to hear it!
-
-[**Submit your suggestion**](/todo/)
+<!-- EVENTS PLACEHOLDER -->
+<section class="py-5">
+    <div class="container text-center py-5">
+        <div class="glass-card p-5 mx-auto rounded-4 border border-white border-opacity-10 fade-in-up stagger-1" style="max-width: 700px; background: rgba(255, 255, 255, 0.02);">
+            <div class="mb-4 position-relative d-inline-block">
+                <div class="position-absolute top-50 start-50 translate-middle bg-brand opacity-25" style="width: 60px; height: 60px; filter: blur(20px); border-radius: 50%;"></div>
+                <div class="position-relative bg-white bg-opacity-5 text-white rounded-circle p-4 border border-white border-opacity-10">
+                    <i class="fas fa-rocket fa-3x"></i>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white mb-3">Something Big is Coming</h2>
+            <p class="text-muted mb-0 lead px-md-5">We are currently planning exciting events, hackathons, and workshops for the community. Stay tuned for official announcements.</p>
+        </div>
+    </div>
+</section>

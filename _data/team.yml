@@ -1,0 +1,67 @@
+leadership:
+  - name: "Akash Pattanayak"
+    role: "Student Representative"
+    image: "/assets/images/team/akash.png"
+    github: "https://github.com/iampattanayak"
+    linkedin: "https://www.linkedin.com/in/akashpattanayak2006/"
+    website: "https://www.pattanayak.qzz.io/"
+    email: "mailto:akashpattanayak89@gmail.com"
+    
+  - name: "Dipam Pandit"
+    role: "Co Student Representative"
+    image: "" # Placeholder
+
+core_members:
+  - name: "Muktadi Hassan"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Aditya Raj"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Amit Kiran Das Adhikari"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Esha Debnath"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Vicky Shah"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Antara Rajak"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Mingma Sherpa"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Sweta Tewary"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+    
+  - name: "Manish Singh"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Dipayan Dutta"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+contributors: []
+
+alumni: []

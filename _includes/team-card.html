@@ -1,0 +1,33 @@
+<div class="col-lg-3 col-md-6 mb-4">
+    <div class="team-card position-relative text-center group">
+        <div class="position-relative d-inline-block mb-3">
+            <img src="{{ include.member.image | default: '/assets/images/placeholder-user.jpg' }}"
+                alt="{{ include.member.name }}" class="rounded-circle border border-2 border-secondary p-1"
+                style="width: 120px; height: 120px; object-fit: cover; transition: all 0.3s ease;">
+
+            <div class="social-overlay position-absolute top-50 start-50 translate-middle d-flex gap-2 opacity-0 transition-base"
+                style="pointer-events: none;">
+                {% if include.member.github %}
+                <a href="{{ include.member.github }}" class="btn btn-sm btn-dark rounded-circle p-2 text-white"><i
+                        class="fab fa-github"></i></a>
+                {% endif %}
+                {% if include.member.linkedin %}
+                <a href="{{ include.member.linkedin }}" class="btn btn-sm btn-primary rounded-circle p-2"><i
+                        class="fab fa-linkedin-in"></i></a>
+                {% endif %}
+            </div>
+        </div>
+
+        <h5 class="fw-bold text-white mb-1">{{ include.member.name }}</h5>
+        <p class="text-brand small mb-2 text-uppercase letter-spacing-1">{{ include.member.role }}</p>
+
+        {% if include.member.tags %}
+        <div class="d-flex justify-content-center gap-1 flex-wrap mt-2 opacity-75">
+            {% for tag in include.member.tags %}
+            <span class="badge bg-dark border border-secondary text-muted rounded-pill" style="font-size: 0.65rem;">{{
+                tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>

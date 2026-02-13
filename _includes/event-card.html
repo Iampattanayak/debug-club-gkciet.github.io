@@ -1,0 +1,25 @@
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card bg-dark border-secondary h-100 overflow-hidden group">
+        <div class="position-relative">
+            <img src="{{ include.event.image | default: '/assets/images/placeholder-event.jpg' }}"
+                class="card-img-top opacity-50 transition-base" alt="{{ include.event.title }}"
+                style="height: 180px; object-fit: cover;">
+            <div
+                class="position-absolute top-0 end-0 m-3 bg-black bg-opacity-75 text-white px-3 py-1 rounded small fw-bold border border-secondary">
+                {{ include.event.date }}
+            </div>
+            <div class="position-absolute bottom-0 start-0 p-3 w-100 bg-gradient-to-t from-black to-transparent">
+                <span class="badge bg-brand text-black fw-bold mb-2">{{ include.event.type }}</span>
+            </div>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+            <h5 class="fw-bold text-white mb-2">{{ include.event.title }}</h5>
+            <p class="text-muted small mb-4 flex-grow-1">{{ include.event.description }}</p>
+
+            <a href="{{ include.event.link }}"
+                class="btn btn-outline-light w-100 group-hover:bg-brand group-hover:text-black transition-base">
+                {{ include.event.cta | default: 'Learn More' }} <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>

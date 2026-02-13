@@ -3,4 +3,3 @@
 
 **[REPLACE THIS]** Add your alert message here!
 
-Example: "🎉 Registration for Spring Hackathon 2025 is now open! [Sign up here](#)"

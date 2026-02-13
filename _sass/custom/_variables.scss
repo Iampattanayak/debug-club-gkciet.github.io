@@ -1,0 +1,108 @@
+/* ========================================= */
+/*   CYBERPUNK / NEON VOID PALETTE           */
+/* ========================================= */
+
+/* PRIMARY ACCENTS - Neon Green & Electric Purple */
+$brand-primary: #00FF9D;
+$brand-green: $brand-primary;
+/* High-vis Neon Green */
+$brand-primary-hover: #5CFFC3;
+/* Brighter Green */
+$brand-primary-dim: #00CC7D;
+/* Dimmed Green */
+$brand-secondary: #BC13FE;
+/* Electric Purple */
+$brand-accent: #00F0FF;
+/* Cyan / Electric Blue */
+
+/* DARK THEME COLORS - deep void */
+$brand-dark: #030305;
+/* Almost pure black with slight cool tint */
+$brand-surface: #0a0a0c;
+/* Surface level 1 */
+$brand-surface-elevated: #121216;
+$brand-surface-lighter: #1A1A20;
+/* Surface level 2 */
+$brand-border: rgba(255, 255, 255, 0.08);
+
+/* TEXT COLORS */
+$text-primary: #FFFFFF;
+$text-secondary: #B0B0C0;
+/* Cool gray */
+$text-muted: #6E6E7A;
+$text-disabled: #404045;
+
+/* GRADIENTS */
+$gradient-main: linear-gradient(135deg, $brand-primary 0%, $brand-accent 100%);
+$gradient-dark: linear-gradient(180deg, rgba(5, 5, 5, 0) 0%, rgba(5, 5, 5, 1) 100%);
+$gradient-glass: linear-gradient(145deg, rgba(20, 20, 25, 0.6), rgba(10, 10, 15, 0.8));
+
+/* 2. ENHANCED TYPOGRAPHY SYSTEM */
+$font-heading: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+$font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+$font-code: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+/* Fluid Typography Scale */
+$font-size-xs: clamp(0.75rem, calc(0.7rem + 0.25vw), 0.875rem);
+$font-size-sm: clamp(0.875rem, calc(0.8rem + 0.35vw), 1rem);
+$font-size-base: clamp(1rem, calc(0.95rem + 0.25vw), 1.125rem);
+$font-size-lg: clamp(1.125rem, calc(1rem + 0.5vw), 1.25rem);
+$font-size-xl: clamp(1.25rem, calc(1.1rem + 0.75vw), 1.5rem);
+$font-size-2xl: clamp(1.5rem, calc(1.3rem + 1vw), 2rem);
+$font-size-3xl: clamp(2rem, calc(1.5rem + 2vw), 3rem);
+$font-size-4xl: clamp(2.5rem, calc(2rem + 2.5vw), 4rem);
+
+/* Line Heights */
+$line-height-tight: 1.2;
+$line-height-normal: 1.6;
+$line-height-relaxed: 1.8;
+
+/* 3. BOOTSTRAP OVERRIDES */
+$primary: $brand-green;
+$body-bg: $brand-dark;
+$body-color: #ffffff;
+$headings-font-family: $font-heading;
+$font-family-base: $font-body;
+$border-radius: 12px;
+$border-color: $brand-border;
+
+/* 4. ENHANCED SPACING SYSTEM */
+$spacing-xs: 0.25rem;
+/* 4px */
+$spacing-sm: 0.5rem;
+/* 8px */
+$spacing-md: 1rem;
+/* 16px */
+$spacing-lg: 1.5rem;
+/* 24px */
+$spacing-xl: 2rem;
+/* 32px */
+$spacing-2xl: 3rem;
+/* 48px */
+$spacing-3xl: 4rem;
+/* 64px */
+$spacing-4xl: 6rem;
+/* 96px */
+
+/* 5. PREMIUM SHADOWS & EFFECTS - Monochrome */
+$box-shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.5);
+$box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+$box-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+$box-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+$box-shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.7);
+$box-shadow-glow: 0 0 20px rgba(255, 255, 255, 0.1);
+$box-shadow-glow-strong: 0 0 30px rgba(255, 255, 255, 0.15);
+$box-shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+
+/* 6. TRANSITIONS */
+$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+/* 7. BORDER RADIUS */
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-full: 9999px;

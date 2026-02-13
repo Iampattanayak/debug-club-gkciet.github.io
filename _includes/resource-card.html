@@ -1,0 +1,18 @@
+<div class="card card-clone h-100 text-light border-0" data-aos="fade-up" data-tilt data-tilt-glare
+    data-tilt-max-glare="0.5">
+    <div class="card-body">
+        <div class="d-flex align-items-center mb-3">
+            <div class="rounded-3 bg-dark p-2 me-3 border border-secondary text-center"
+                style="width: 48px; height: 48px;">
+                <span class="fw-bold text-neon h5 mb-0">{{ include.resource.tag }}</span>
+            </div>
+            <div>
+                <h6 class="card-title fw-bold mb-0">{{ include.resource.title }}</h6>
+                <small class="text-muted">{{ include.resource.subtitle }}</small>
+            </div>
+        </div>
+        <a href="{{ include.resource.link }}" class="btn btn-outline-light btn-sm w-100">
+            Open Resource <i class="fas fa-external-link-alt ms-1"></i>
+        </a>
+    </div>
+</div>

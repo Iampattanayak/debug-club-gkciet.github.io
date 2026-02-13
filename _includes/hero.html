@@ -1,0 +1,31 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {% if include.badge %}
+            <span class="badge bg-neon text-dark mb-3 rounded-pill px-3 py-2 fw-bold">{{ include.badge }}</span>
+            {% endif %}
+
+            <h1 class="display-3 fw-bold mb-3 text-white">
+                {{ include.title }}
+                <span class="text-neon typewrite" data-period="2000"
+                    data-type='[ "{{ include.highlight }}", "Innovators.", "Builders.", "Dreamers." ]'>
+                    <span class="wrap">{{ include.highlight }}</span>
+                </span>
+            </h1>
+
+            <p class="lead text-muted mb-5">
+                {{ include.description }}
+            </p>
+
+            {% if include.cta_text %}
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="{{ include.cta_link }}" class="btn btn-neon btn-lg px-4 gap-3">{{ include.cta_text }}</a>
+                {% if include.secondary_text %}
+                <a href="{{ include.secondary_link }}" class="btn btn-outline-light btn-lg px-4">{{
+                    include.secondary_text }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

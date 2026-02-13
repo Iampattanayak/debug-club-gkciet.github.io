@@ -1,176 +1,64 @@
-# Projects *Building Together*
-
-
-## Active Projects
-
-Currently none.
-
-<!-- 
-Below are projects that are actively being developed. Interested in contributing? Reach out to the project lead!
-
-### [Project Name 1]
-
-**Status:** 🟢 Active Development  
-**Tech Stack:** [e.g., React, Node.js, MongoDB]  
-**Project Lead:** [Name] ([email@example.com])  
-**GitHub:** [Repository URL]
-
-**Description:** [Brief description of what the project does]
-
-**Looking for:**
-- [ ] Frontend developers
-- [ ] Backend developers
-- [ ] UI/UX designers
-- [ ] Testers
-
-**How to contribute:** [Link to CONTRIBUTING.md or instructions]
-
+---
+layout: page
+title: Projects
+permalink: /projects/
+full_width: true
 ---
 
-### [Project Name 2]
+<!-- HEADER -->
+<section class="py-5 text-center">
+    <div class="container pt-5">
+        <span class="badge bg-white bg-opacity-10 text-white border border-white border-opacity-25 rounded-pill mb-3 px-3 py-2">INNOVATION HUB</span>
+        <h1 class="display-3 fw-bold mb-3">Built by <span class="text-brand">Students</span></h1>
+        <p class="text-muted mx-auto mb-5" style="max-width: 600px;">
+            From simple automation scripts to complex campus management systems. Explore open-source innovations crafted by GKCIET minds.
+        </p>
 
-**Status:** 🟡 Planning Phase  
-**Tech Stack:** [e.g., Python, Flask, PostgreSQL]  
-**Project Lead:** [Name] ([email@example.com])  
-**GitHub:** [Repository URL]
+        <!-- Navigation Tabs -->
+        <div class="d-flex justify-content-center mb-5">
+            <div class="nav-segment-container">
+                <a href="/projects/" class="btn btn-brand btn-sm rounded-pill px-4 text-black fw-bold text-decoration-none nav-segment-item active">All Projects</a>
+                <a href="/projects/web/" class="btn btn-transparent btn-sm rounded-pill px-4 text-muted hover-white text-decoration-none nav-segment-item">Web Dev</a>
+                <a href="/projects/ai/" class="btn btn-transparent btn-sm rounded-pill px-4 text-muted hover-white text-decoration-none nav-segment-item">AI / ML</a>
+                <a href="/projects/app/" class="btn btn-transparent btn-sm rounded-pill px-4 text-muted hover-white text-decoration-none nav-segment-item">App Dev</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-**Description:** [Brief description of what the project does]
-
-**Looking for:**
-- [ ] Python developers
-- [ ] Database experts
-- [ ] Technical writers
-- [ ] Project managers
-
----
-
-### [Project Name 3]
-
-**Status:** 🟢 Active Development  
-**Tech Stack:** [e.g., Java, Spring Boot, MySQL]  
-**Project Lead:** [Name] ([email@example.com])  
-**GitHub:** [Repository URL]
-
-**Description:** [Brief description of what the project does]
-
-**Demo:** [Link if available] -->
-
----
-
-## Completed Projects
-
-Currently none.
-
-<!-- 
-### [Completed Project 1]
-
-**Completed:** [Month Year]  
-**Tech Stack:** [Technologies used]  
-**Team:** [Team member names]
-
-**Description:** [What was built and accomplished]
-
-**Links:**
-- 🌐 [Live Demo](#)
-- 💻 [Source Code](#)
-- 📊 [Presentation](#)
-
-{% spoiler "View Screenshots" %}
-[Add screenshots or embed images here]
-
-![Screenshot 1](#)
-![Screenshot 2](#)
-{% endspoiler %}
-
----
-
-### [Completed Project 2]
-
-**Completed:** [Month Year]  
-**Tech Stack:** [Technologies used]  
-**Team:** [Team member names]
-
-**Description:** [What was built and accomplished]
-
-**Awards/Recognition:** [If any] -->
-
----
-
-## Project Ideas
+<!-- PROJECTS GRID -->
+<section class="py-5">
+    <div class="container">
+        
+        <div class="row g-4">
+            {% for project in site.data.projects.list %}
+            <div class="col-md-6 col-lg-4 fade-in-up stagger-{{ forloop.index | modulo: 5 | plus: 1 }}">
+                <div class="glass-card p-4 h-100 d-flex flex-column rounded-4 group">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                         <div class="icon-square bg-white bg-opacity-10 text-white rounded-circle p-3">
+                            <i class="{{ project.icons[0] }} fa-lg"></i>
+                        </div>
+                        <span class="badge bg-black border border-secondary text-muted">{{ project.category }}</span>
+                    </div>
+                    
+                    <h4 class="fw-bold text-white mb-2">{{ project.title }}</h4>
+                    <p class="text-muted small mb-4 line-clamp-3">{{ project.description }}</p>
+                    
+                    <div class="mt-auto pt-3 border-top border-secondary border-opacity-10">
+                        <div class="d-flex justify-content-between align-items-center">
+                             <div class="d-flex gap-2 text-muted">
+                                {% for icon in project.icons %}
+                                <i class="{{ icon }}" title="{{ icon }}"></i>
+                                {% endfor %}
+                            </div>
+                            <a href="{{ project.link }}" class="btn btn-sm btn-outline-light rounded-pill px-3">View <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
 
-Have an idea but need a team? Post it here!
-
-### Night Ok App
-
-**Proposed by:** Dipam Pandit 
-
-**Description:** [Brief description of the project idea]  
-**Skills needed:** [List required skills]  
-**Contact:** [email@example.com]
-
-
-<!-- ---
-
-## Open Source Contributions
-
-
-Our members actively contribute to open-source projects:
-
-* **[Project Name]** - [Brief description] - [# of contributions]
-* **[Project Name]** - [Brief description] - [# of contributions]
-* **[Project Name]** - [Brief description] - [# of contributions]
-
-Want to get started with open source? Check our [resources page](/resources/) for guides! -->
-
----
-
-## Hackathon Projects
-
-
-Projects created during hackathons:
-
-### Smart India Hackathon - 2025
-
-#### Chandas Indentifier (PS NO: 25158) - 🏆 The top 5 team
-
-**Team:** MAAANTIS
-
-**Description:** A web app analysing sanskrit poetry and identifying correct metre with fuzzy matching and detail breakdown of why
-
-**Tech Stack:** | Flask | Python | Jinja | Javascript | HTML | CSS 
-
-**Links:** | [GitHub](/todo/) | [Demo](/todo/)
-
----
-
-## Start a Project
-
-Interested in starting a new club project?
-
-{% alert success %}
-**How to propose a project:**
-
-1. Fill out our [project proposal form todo](/todo/)
-2. Present your idea at a general meeting
-3. Recruit team members
-4. Get approved by club leadership
-5. Start building!
-
-**Requirements:**
-- Clear project scope and goals
-- At least 3 committed team members
-- Regular progress updates
-- Open to all club members
-{% endalert %}
-
-<!-- ---
-
-## Featured Project Gallery
-
-
-
-![Project 1](path/to/image1.png)
-![Project 2](path/to/image2.png)
-![Project 3](path/to/image3.png)
- -->

@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg fixed-top transition-all">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+            <span class="badge bg-brand bg-opacity-10 text-brand rounded-pill px-3 py-2 font-monospace fw-bold"
+                style="font-size: 1rem; border: 1px solid rgba(0, 229, 153, 0.2);">
+                &lt;DEBUG /&gt;
+            </span>
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navClone"
+            aria-controls="navClone" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-lg" style="color: #00F0FF;"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navClone">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1 gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/about/' %}active{% endif %}" href="/about/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/events/' %}active{% endif %}"
+                        href="/events/">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/projects/' %}active{% endif %}"
+                        href="/projects/">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/team/' %}active{% endif %}" href="/team/">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/resources/' %}active{% endif %}"
+                        href="/resources/">Resources</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                <a href="https://github.com/debug-club-gkciet"
+                    class="social-icon-link text-white opacity-75 hover-opacity-100 transition-base" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit our GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://discord.gg/your-invite-link"
+                    class="social-icon-link text-white opacity-75 hover-opacity-100 transition-base" target="_blank"
+                    rel="noopener noreferrer" aria-label="Join our Discord">
+                    <i class="fab fa-discord fa-lg"></i>
+                </a>
+
+                <a href="/join/" class="btn btn-primary btn-sm px-4 fw-bold shadow-brand-glow">Join Now</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div style="height: 80px;"></div> <!-- Fixed Nav Spacer -->

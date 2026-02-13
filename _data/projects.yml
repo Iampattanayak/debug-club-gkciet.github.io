@@ -1,0 +1,28 @@
+featured:
+  title: "GKCIET Hostel Management System"
+  description: "A comprehensive web application designed to streamline hostel allocation, complaint registration, and mess management. Currently serving 500+ students on campus."
+  image_url: "/assets/images/projects/hms_dashboard.png"
+  tags:
+    - name: "React"
+      icon: "fab fa-react"
+    - name: "Node.js"
+      icon: "fab fa-node-js"
+    - name: "MongoDB"
+      icon: "fas fa-database"
+  buttons:
+    - text: "View Repository"
+      url: "https://github.com/debug-club-gkciet/hms"
+      icon: "fab fa-github"
+      primary: true
+    - text: "Live Demo"
+      url: "https://hms.gkciet.ac.in"
+      icon: "fas fa-external-link-alt"
+      primary: false
+
+list:
+  - title: "DEBUG's Official Website"
+    category: "Official"
+    description: "The official website for DEBUG club. Features event registration, member directory, and blog."
+    image: "/assets/images/debug_logo.jpg"
+    icons: ["fab fa-github", "fab fa-html5", "fab fa-sass"]
+    link: "https://github.com/DEBUG-CLUB-GKCIET/debug-club-gkciet.github.io"

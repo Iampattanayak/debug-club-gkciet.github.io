@@ -1,0 +1,31 @@
+<div class="card h-100 card-clone text-center border-0" data-aos="fade-up" data-aos-delay="100" data-tilt
+    data-tilt-glare data-tilt-max-glare="0.5">
+    <div class="mx-auto mb-3 position-relative" style="width: 100px; height: 100px;">
+        <img src="{{ include.member.image }}" class="rounded-circle w-100 h-100 border border-2 border-secondary"
+            style="object-fit: cover;" alt="{{ include.member.name }}">
+        {% if include.member.role == 'President' or include.member.role contains 'Lead' %}
+        <span class="position-absolute bottom-0 end-0 p-1 bg-neon border border-dark rounded-circle">
+            <span class="visually-hidden">Lead</span>
+        </span>
+        {% endif %}
+    </div>
+
+    <div class="card-body p-0">
+        <h5 class="card-title fw-bold mb-1 text-white">{{ include.member.name }}</h5>
+        <p class="card-text text-neon small fw-bold mb-2">{{ include.member.role }}</p>
+
+        {% if include.member.tags %}
+        <div class="mb-3">
+            {% for tag in include.member.tags %}
+            <span class="badge bg-dark border border-secondary text-muted small me-1">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="d-flex justify-content-center gap-2">
+            <!-- <a href="#" class="btn btn-sm btn-outline-light rounded-circle px-2"><i class="fab fa-github"></i></a> -->
+            <!-- <a href="#" class="btn btn-sm btn-outline-light rounded-circle px-2"><i class="fab fa-linkedin"></i></a> -->
+            <small class="text-muted">Joined {{ include.member.joined }}</small>
+        </div>
+    </div>
+</div>
