@@ -57,8 +57,8 @@ Edit [_includes/nav.md](_includes/nav.md) to customize the navigation menu. Add 
 
 ### 4. Update Header & Footer
 
-- **Header**: Edit [_includes/header.md](_includes/header.md) to add a logo or modify the header
-- **Footer**: Edit [_includes/footer.md](_includes/footer.md) to add contact info and social links
+- **Header / Navbar**: Edit [`_includes/navbar.html`](_includes/navbar.html) to add a logo or modify the header/navigation
+- **Footer**: Edit [`_includes/footer_custom.html`](_includes/footer_custom.html) to add contact info and social links
 
 ### 5. Customize Pages
 
