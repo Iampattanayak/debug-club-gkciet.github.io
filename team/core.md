@@ -96,22 +96,22 @@ full_width: true
                     <div class="d-flex justify-content-between align-items-center border-top border-secondary border-opacity-25 pt-3 mt-auto">
                         <div class="d-flex gap-2">
                              {% if member.github %}
-                             <a href="{{ member.github }}" target="_blank" class="text-muted hover-white"><i class="fab fa-github"></i></a>
+                             <a href="{{ member.github }}" target="_blank" rel="noopener noreferrer" class="text-muted hover-white"><i class="fab fa-github"></i></a>
                              {% endif %}
                              {% if member.linkedin %}
-                             <a href="{{ member.linkedin }}" target="_blank" class="text-muted hover-white"><i class="fab fa-linkedin"></i></a>
+                             <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-muted hover-white"><i class="fab fa-linkedin"></i></a>
                              {% endif %}
                              {% if member.website %}
-                             <a href="{{ member.website }}" target="_blank" class="text-muted hover-white"><i class="fas fa-globe"></i></a>
+                             <a href="{{ member.website }}" target="_blank" rel="noopener noreferrer" class="text-muted hover-white"><i class="fas fa-globe"></i></a>
                              {% endif %}
                              {% if member.email %}
                              <a href="{{ member.email }}" class="text-muted hover-white"><i class="fas fa-envelope"></i></a>
                              {% endif %}
                              {% if member.twitter %}
-                             <a href="{{ member.twitter }}" target="_blank" class="text-muted hover-white"><i class="fab fa-x-twitter"></i></a>
+                             <a href="{{ member.twitter }}" target="_blank" rel="noopener noreferrer" class="text-muted hover-white"><i class="fab fa-x-twitter"></i></a>
                              {% endif %}
                              {% if member.instagram %}
-                             <a href="{{ member.instagram }}" target="_blank" class="text-muted hover-white"><i class="fab fa-instagram"></i></a>
+                             <a href="{{ member.instagram }}" target="_blank" rel="noopener noreferrer" class="text-muted hover-white"><i class="fab fa-instagram"></i></a>
                              {% endif %}
                         </div>
                     </div>
