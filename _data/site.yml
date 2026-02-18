@@ -1,0 +1,22 @@
+hero:
+  badge: "GKCIET's Official Coding Community"
+  title:
+    line1: "Code. Debug."
+    highlight: "Innovate."
+  description: "Join a community of passionate developers, designers, and innovators. We build the future, one line of code at a time."
+  cta:
+    primary:
+      text: "Start Journey"
+      link: "/join/"
+    secondary:
+      text: "View Projects"
+      link: "/projects/"
+  npm_command: "gkciet-debug"
+
+stats:
+  - count: "31"
+    label: "Active Members"
+  - count: "0"
+    label: "Projects Shipped"
+  - count: "24/7"
+    label: "Discord Active"

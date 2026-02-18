@@ -1,0 +1,14 @@
+<!-- STATS BAR (Separate Section) -->
+<section class="py-3 py-md-4 border-top border-bottom border-dark bg-black bg-opacity-50 stats-bar">
+    <div class="container">
+        <div class="row text-center divide-x g-0">
+            {% for stat in site.data.site.stats %}
+            <div class="col-4">
+                <h3 class="fw-bold text-white mb-1 mb-md-0">{{ stat.count }}</h3>
+                <small class="text-muted text-uppercase letter-spacing-1 d-block" style="font-size: 0.7rem;">{{
+                    stat.label }}</small>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

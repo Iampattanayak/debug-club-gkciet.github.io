@@ -44,16 +44,23 @@ cs50:
   tz: Asia/Kolkata             # Change to your timezone
 ```
 
-### 2. Update Navigation
+### 2. Site Content
+
+Edit [_data/site.yml](_data/site.yml) to update the following dynamic content:
+- **Hero Section**: Title, description, and call-to-action buttons.
+- **Stats Bar**: Active members, projects count, and Discord status.
+
+
+### 3. Update Navigation
 
 Edit [_includes/nav.md](_includes/nav.md) to customize the navigation menu. Add or remove pages as needed.
 
-### 3. Update Header & Footer
+### 4. Update Header & Footer
 
 - **Header**: Edit [_includes/header.md](_includes/header.md) to add a logo or modify the header
 - **Footer**: Edit [_includes/footer.md](_includes/footer.md) to add contact info and social links
 
-### 4. Customize Pages
+### 5. Customize Pages
 
 Replace the placeholder content in these pages:
 
@@ -65,7 +72,7 @@ Replace the placeholder content in these pages:
 - **todos**: [todo.md](todo.md)
 
 
-### 5. Add an Alert Banner
+### 6. Add an Alert Banner
 
 To add a site-wide alert banner:
 
@@ -77,7 +84,7 @@ To add a site-wide alert banner:
 
 2. Edit [_includes/alert.md](_includes/alert.md) with your alert message
 
-### 6. Update Logo 
+### 7. Update Logo 
 
 1. Add your logo image to the `assets/` folder
 2. Uncomment the logo line in [_includes/header.md](_includes/header.md):

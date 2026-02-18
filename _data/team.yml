@@ -9,18 +9,28 @@ leadership:
     
   - name: "Dipam Pandit"
     role: "Co Student Representative"
-    image: "" # Placeholder
+    image: "/assets/images/team/dipam.png"
+    github: "https://github.com/dipampandit/"
+    linkedin: "https://www.linkedin.com/in/dipam-pandit/"
+    email: "mailto:dipampandit21@gmail.com"
 
 core_members:
   - name: "Muktadi Hassan"
     role: "Core Member"
-    image: "" # Placeholder
+    image: "/assets/images/team/Muktadi Hassan.jpg"
     joined: "2024"
+    github: "https://github.com/0xMukta"
+    linkedin: "https://in.linkedin.com/in/muktadi"
+    email: "mailto:muktadi.h25@gmail.com"
 
   - name: "Aditya Raj"
     role: "Core Member"
-    image: "" # Placeholder
+    image: "/assets/images/team/AdityaRaj.jpg"
     joined: "2024"
+    github: "https://github.com/induaditya3"
+    linkedin: "https://www.linkedin.com/in/aditya-raj-a9257a333"
+    website: "https://textcritique.github.io/"
+    email: "mailto:yen-paging-frenzy@duck.com"
 
   - name: "Amit Kiran Das Adhikari"
     role: "Core Member"
@@ -34,13 +44,19 @@ core_members:
 
   - name: "Vicky Shah"
     role: "Core Member"
-    image: "" # Placeholder
+    image: "/assets/images/team/vickyshah.jpeg"
     joined: "2024"
+    github: "https://github.com/vickyshah03"
+    linkedin: "https://www.linkedin.com/in/vicky-shah-0b0824329"
+    email: "mailto:Vickykumarshah30@gmail.com"
 
   - name: "Antara Rajak"
     role: "Core Member"
-    image: "" # Placeholder
+    image: "/assets/images/team/antararajak.jpeg"
     joined: "2024"
+    github: "https://github.com/antara104"
+    linkedin: "https://www.linkedin.com/in/antara-rajak-57875632a"
+    email: "mailto:antararajak104@gmail.com"
 
   - name: "Mingma Sherpa"
     role: "Core Member"
@@ -54,10 +70,102 @@ core_members:
     
   - name: "Manish Singh"
     role: "Core Member"
+    image: "/assets/images/team/Manish Singh.jpeg"
+    joined: "2024"
+    github: "https://github.com/Manish-rin"
+    linkedin: "https://www.linkedin.com/in/manishincode/"
+    email: "mailto:manishincode@gmail.com"
+
+  - name: "Dipayan Dutta"
+    role: "Core Member"
     image: "" # Placeholder
     joined: "2024"
 
-  - name: "Dipayan Dutta"
+  - name: "Anand Kumar"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Anmol Kumar Bhagat"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Arkaprava Barman"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Arpita Shaw"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Ayush Kumar"
+    role: "Core Member"
+    image: "/assets/images/team/Ayush Kumar.jpeg"
+    joined: "2024"
+    github: "https://github.com/Ayush-git-ak"
+    linkedin: "https://www.linkedin.com/in/ayushkumar003"
+    email: "mailto:ayushkumar00136@gmail.com"
+
+  - name: "Debasish Mahata"
+    role: "Core Member"
+    image: "/assets/images/team/Debasish Mahata.jpg"
+    joined: "2024"
+    github: "https://github.com/debasish005"
+    linkedin: "https://www.linkedin.com/in/debasish-mahata-085045379"
+    email: "mailto:debasishmahata005@gmail.com"
+
+  - name: "Hriday Chowdhury"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Hritik Kumar"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Indrajit Das"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Jitesh Kumar Gouda"
+    role: "Core Member"
+    image: "/assets/images/team/Jitesh Kumar Gouda.jpg"
+    joined: "2024"
+    github: "https://github.com/Jitesh-JK"
+    linkedin: "https://www.linkedin.com/in/jitesh-kumar-gouda-b0aa28343/"
+    email: "mailto:jiteshkumargouda33@gmail.com"
+
+  - name: "Keya Saha"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Meha Siddiki"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Ramid Roy Majhi"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Sayon Dutta"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Soham Dev"
+    role: "Core Member"
+    image: "" # Placeholder
+    joined: "2024"
+
+  - name: "Subrata Mahato"
     role: "Core Member"
     image: "" # Placeholder
     joined: "2024"
