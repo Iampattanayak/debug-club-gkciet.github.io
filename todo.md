@@ -48,3 +48,4 @@ It is built using **Jekyll**, **Bootstrap 5**, and **Liquid Templates**.
 - [ ] Update social links in `_includes/footer_custom.html`.
 - [x] Add real member data in `_data/team.yml`.
 - [ ] Configure Formspree ID in `contact.md`.
+

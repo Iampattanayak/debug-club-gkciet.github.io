@@ -6,8 +6,9 @@ A website for our coding club built with Jekyll and the [CS50 theme](https://git
 
 ### Prerequisites
 
-- Ruby (version 2.5 or higher)
-- Bundler
+- [Ruby](https://www.ruby-lang.org/) (>= 2.5) & Bundler
+- [Node.js](https://nodejs.org/) (>= 18) & npm
+- [Python 3](https://www.python.org/) with `Pygments` (`pip install Pygments`)
 - Git
 
 ### Installation
@@ -18,18 +19,33 @@ A website for our coding club built with Jekyll and the [CS50 theme](https://git
    cd <your-repo-name>
    ```
 
-2. **Install dependencies**
+2. **Install vendor assets**
+
+   On **Linux/macOS** (or CI):
    ```bash
-   bundle install # assuming ruby and jekyll is installed
+   npm install
+   ```
+   On **Windows**:
+   ```bash
+   npm install --ignore-scripts
+   python setup_assets.py
+   ```
+   This fetches vendor libraries into `assets/` and generates SASS files in `_sass/`.
+
+3. **Install Ruby dependencies**
+   ```bash
+   bundle install
    ```
 
-3. **Run locally**
+4. **Run locally**
    ```bash
    bundle exec jekyll serve
    ```
 
-4. **View the site**
+5. **View the site**
    Open your browser and navigate to `http://localhost:4000`
+
+> **Note:** The vendor assets (`assets/bootstrap/`, `_sass/bootstrap/`, etc.) are not committed to the repo, they are generated at install time. See `setup_assets.py` for details.
 
 ## Customization Guide
 

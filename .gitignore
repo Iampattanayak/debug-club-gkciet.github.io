@@ -7,3 +7,26 @@ node_modules
 *.log
 .DS_Store
 Thumbs.db
+
+# Generated Assets (Vendor)
+assets/algoliasearch/
+assets/bootstrap/
+assets/bootstrap-table/
+assets/@fortawesome/
+assets/@iframe-resizer/
+assets/instantsearch.js/
+assets/jquery/
+assets/luxon/
+assets/mathjax/
+assets/@mathjax/
+assets/mermaid/
+assets/@twemoji/
+assets/vanilla-lazyload/
+assets/scratchblocks.min.js
+assets/scratchblocks.min.js.map
+assets/popper.js/
+
+# Generated SASS
+_sass/bootstrap/
+_sass/default.scss
+_sass/github-dark.scss
