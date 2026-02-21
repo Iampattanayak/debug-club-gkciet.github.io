@@ -487,6 +487,10 @@ a {
     transition: all 0.3s ease;
 }
 
+.transition-all {
+    transition: all 0.3s ease !important;
+}
+
 .transition-transform {
     transition: transform 0.3s ease;
 }
@@ -1063,49 +1067,16 @@ a {
 /* ========================================= */
 
 /* Fade in animations with better timing */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s $transition-base, transform 0.6s $transition-base;
-}
-
+/* Base Animation Class (triggered by IntersectionObserver in ux-enhancements.js) */
 .fade-in-up {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s $transition-base, transform 0.8s $transition-base;
-}
-
-.fade-in-left {
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: opacity 0.8s $transition-base, transform 0.8s $transition-base;
-}
-
-.fade-in-right {
-    opacity: 0;
-    transform: translateX(30px);
-    transition: opacity 0.8s $transition-base, transform 0.8s $transition-base;
-}
-
-/* Visible state */
-.is-visible,
-.fade-in.is-visible,
-.fade-in-up.is-visible,
-.fade-in-left.is-visible,
-.fade-in-right.is-visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-/* Scale animations */
-.scale-in {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.6s $transition-base, transform 0.6s $transition-base;
+    transform: translate3d(0, 30px, 0);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
 
     &.is-visible {
         opacity: 1;
-        transform: scale(1);
+        transform: translate3d(0, 0, 0);
     }
 }
 
