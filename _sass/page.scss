@@ -232,3 +232,30 @@ main .alert .fa-ul {
         display: none !important;
     }
 }
+
+/* === Custom light theme for DEBUG CLUB === */
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* Navbar background + links */
+body.light-theme .navbar {
+  background-color: #f8f9fa;
+}
+
+body.light-theme .nav-link {
+  color: #111111;
+}
+
+body.light-theme .nav-link.active {
+  color: #0d6efd;
+}
+
+/* Example section/card overrides — adjust selectors to your site */
+body.light-theme .card,
+body.light-theme .card-body {
+  background-color: #ffffff;
+  color: #111111;
+}
